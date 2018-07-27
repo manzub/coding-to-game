@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CC  GAMES</title>
+</head>
+<body>
+<SCRIPT language="JavaScript"
+        type="text/javascript">
+<!--
+//
+// Documentation:
+//   http://chami.com/tips/javascript/
+//
+function checkAnswer(quizForm,
+                     theAnswer,
+                     urlRight,
+                     urlWrong)
+{
+  var s = "?";
+
+  // go through the "current choices"
+  // to find the selected choice.
+  // radio boxes pointing to choices
+  // must be named "cc"
+  // change if necessary
+  //
+  var i = 0;
+  for(;i<quizForm.elements.length;i++)
+  {
+    if(("cc" ==
+        quizForm.elements[i].name) &&
+       (quizForm.elements[i].checked))
+    {
+      s = quizForm.elements[i].value;
+    }
+  }
+
+  // no choice was selected
+  //
+  if("?" == s)
+  {
+    alert("Please make a selection.");
+    return false;
+  }
+
+  // check if we have the correct
+  // choice selected
+  //
+  if(s == theAnswer)
+  {
+    alert("'"+s+"' is correct!");
+    if(urlRight)
+    {
+    document.location.href = urlRight;
+    }
+  }
+  else
+  {
+    alert("'"+s+"' is incorrect.");
+    if( urlWrong )
+    {
+    document.location.href = urlWrong;
+    }
+  }
+
+  // return "false" to indicate not to
+  // submit the form.
+  // change this to "true" if the form
+  // "action" is valid,
+  // i.e. points to a valid CGI script
+  //
+  return false;
+}
+//-->
+</SCRIPT>
+
+
+1.What is JavaScript?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');"
+>
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Another name for Java<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. A scripting language mostly for the web<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. When you use Java without compiling<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+2.What is HTML?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'C');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Hyper Text Mark-Up Language<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. A web Design Package<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. A Programming Language Used For Designing WebPages<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+3.What is The full meaning of CSS?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Cascading style sheet<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. cascaded style sheet<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. cascading style sheets<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+
+4.Which Operating System is SWIFT used to Develop for?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'B');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Windows<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. IOS<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. Android<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+
+4.Who is the owner of microsoft?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'C');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Paul Allen<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Chris ros<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. Bill Gates<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+
+5.Who is the owner of whatsappp?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'C');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Paul Allen<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Jaun Koum<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. Mark ZuckerBerg<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+
+6.Who where the first three inventers of television?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'C');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Paul Allen , phillo Farnsworth , john logie baird<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. Jaun Koum , phillo Farnsworth , john logie baird<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. phillo Farnsworth , john logie baird , charles francis jenkins<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+<div id="game" align="right">
+<h5>ARE YOU FEELING A BIT TIRED</h5>
+	<html> 
+<head> 
+<script type="text/javascript"> 
+<!-- 
+function Redirect() {  
+ 
+    window.location="C:/Users/Wisdom/Desktop/New project//index.html"; 
+} 
+
+//--> 
+</script> 
+</head> 
+<body> 
+<p>Click the following button, you will be redirected to my game page.</p> 
+<form> 
+<input type="button" value="Redirect Me" onclick="Redirect();" /> 
+</form> 
+</body> </div>
+<div></div><hr>
+
+7.What kind of programming language is javascript?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'A');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Object oreinted Programming language<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. encapsulation<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. all<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+<div></div><hr>
+
+
+8.Who invented java?
+
+<FORM method="POST"
+      onSubmit="return checkAnswer(this,'A');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. James Gosling<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. mark zuckerberg<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. all<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+  
