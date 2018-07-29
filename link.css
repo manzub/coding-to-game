@@ -11,7 +11,7 @@ button {
 }
 
 
-
+body{width:90%;margin:auto;min-width:600px;max-width:2000px}
 
 button:hover {
     opacity: 0.8;
