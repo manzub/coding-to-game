@@ -334,7 +334,9 @@ table a, #comments a{background-color:inherit;}
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
-	#footer{}
+	#footer{ background-color: rgb(100, 100, 102);
+		fill-opacity: inherit;
+	}
 
 	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
@@ -380,4 +382,17 @@ color: #838080;
 	border:2px;
 	border-width: 508px;
 	border-color: #000000;
+}
+.p1{
+border: 1px;
+border-color: #000000;
+border-radius: 2px;
+}.p2{
+border: 1px;
+border-color: #000000;
+border-radius: 2px;
+}.p3{
+border: 1px;
+border-color: #000000;
+border-radius: 2px;
 }
